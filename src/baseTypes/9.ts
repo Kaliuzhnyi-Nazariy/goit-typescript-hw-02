@@ -20,4 +20,11 @@ const page2 = {
   status: 'close',
 }
 
+type BasicPage = {
+  title: string;
+  likes: number;
+  accounts: string[];
+  status: string;
+};
+
 export {};
