@@ -14,7 +14,7 @@ enum Week {
 }
 
 function isWeekend(days: Week) {
-  if (Week.Saturday || Week.Sunday) {
+  if (days === Week.Saturday ||days === Week.Sunday) {
     return true
   }
   return false
@@ -22,14 +22,3 @@ function isWeekend(days: Week) {
 
 isWeekend(Week.Sunday)
 
-// type DaysOfWeek = Record<Week, boolean>;
-
-// const isWeekend: DaysOfWeek = {
-//   [Week.Monday]: false,
-//   [Week.Tuesday]: false,
-//   [Week.Wednesday]: false,
-//   [Week.Thursday]: false,
-//   [Week.Friday]: false,
-//   [Week.Saturday]: true,
-//   [Week.Sunday]: true,
-// };
